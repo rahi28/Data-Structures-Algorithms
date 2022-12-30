@@ -5,7 +5,7 @@ public class MinMaxOccurence {
 
         static int findDiff(int arr[], int n)
         {
-            // Put all elements in a hash map
+
             Map<Integer,Integer> mp = new HashMap<>();
             for (int i = 0 ; i < n; i++)
             {
@@ -18,9 +18,7 @@ public class MinMaxOccurence {
                     mp.put(arr[i], 1);
                 }
             }
-
-            // Find counts of maximum and minimum
-            // frequent elements
+            
             int max_count = 0, min_count = n;
             for (Map.Entry<Integer,Integer> x : mp.entrySet())
             {

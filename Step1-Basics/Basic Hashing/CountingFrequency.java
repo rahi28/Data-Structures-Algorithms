@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
+
 import java.util.Scanner;
 
 public class CountingFrequency {
@@ -14,10 +13,8 @@ public class CountingFrequency {
 
         for (int i = 0; i < n; i++) {
             if ((input[i] / n) != 0)
-                System.out.println(
-                        "Element " + (i + 1) + " occurs "
-                                + input[i] / n + " times");
-            // Change the element back to original value
+                System.out.println( "Element " + (i + 1) + " occurs" + input[i] / n + " times");
+
             input[i] = input[i] % n + 1;
         }
     }
